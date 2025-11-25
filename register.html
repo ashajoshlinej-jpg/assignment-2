@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Computing Registration</title>
+
+    <style>
+
+        /* ----------- NAVBAR STYLE ----------- */
+        nav {
+            background: #004aad;
+            padding: 15px 0;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav .menu {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: flex-end;
+            gap: 40px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* ----------- REGISTRATION FORM ----------- */
+        body {
+            font-family: "Poppins", sans-serif;
+            background: #f0f4ff;
+        }
+
+        .container {
+            width: 40%;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            animation: fadeUp 1s ease-in-out;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #004aad;
+        }
+
+        label {
+            font-weight: 600;
+            color: #333;
+            display: block;
+            margin-top: 15px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            border: 1px solid #aaa;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        select {
+            cursor: pointer;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #004aad;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 6px;
+            margin-top: 25px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        button:hover {
+            background: #007bff;
+        }
+
+        /* ----------- ANIMATION ----------- */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+    </style>
+
+    <!-- AUTO-REDIRECT SCRIPT -->
+    <script>
+        function goToAbout(event) {
+            event.preventDefault();  
+            window.location.href = "about.html";  
+        }
+    </script>
+
+</head>
+<body>
+
+    <!-- TOP NAVIGATION BAR -->
+    <nav>
+        <div class="menu">
+            <a href="registration.html">Register</a>
+            <a href="about.html">About</a>
+            <a href="news.html">News</a>
+        </div>
+    </nav>
+
+    <!-- REGISTRATION FORM -->
+    <div class="container">
+        <h2>Quantum Computing Registration</h2>
+
+        <form onsubmit="goToAbout(event)">
+
+            <label>Full Name:</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Phone Number:</label>
+            <input type="text" placeholder="Enter your phone number" required>
+
+            <label>Area of Interest:</label>
+            <select required>
+                <option value="">-- Select Your Interest --</option>
+                <option>Quantum Computing</option>
+                <option>Blockchain</option>
+                <option>Cloud Computing</option>
+                <option>Cyber Security</option>
+                <option>Artificial Intelligence</option>
+            </select>
+
+            <button type="submit">Submit Registration</button>
+
+        </form>
+    </div>
+
+</body>
+</html>

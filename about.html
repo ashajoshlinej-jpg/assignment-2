@@ -1,0 +1,196 @@
+
+           
+
+        
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About – Quantum Computing</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: #0b0f2f; /* Same as registration page */
+            color: #ffffff;
+        }
+
+        /* Navbar */
+        nav {
+            background: #0d1247;
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 0 10px rgba(0, 195, 255, 0.3);
+        }
+
+        nav .logo {
+            font-size: 22px;
+            font-weight: 700;
+            color: #02e8ff; /* Neon blue */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #02e8ff;
+        }
+
+        /* Content layout */
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 40px auto;
+            animation: fadeIn 1.3s ease;
+        }
+
+        h1 {
+            color: #02e8ff; 
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .topic-box {
+            background: #131b52;
+            border-left: 4px solid #02e8ff;
+            padding: 18px 20px;
+            margin-top: 20px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .topic-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 238, 255, 0.2);
+        }
+
+        .topic-title {
+            font-size: 22px;
+            color: #02e8ff;
+            font-weight: 600;
+        }
+
+        /* Button */
+        .modern-btn {
+            margin-top: 40px;
+            display: inline-block;
+            padding: 14px 30px;
+            background: linear-gradient(135deg, #02e8ff, #1a75ff);
+            color: #000;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .modern-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px #02e8ff;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Quantum Tech</div>
+        <ul>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="news.html">News</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Content -->
+    <div class="container">
+
+        <h1>About Quantum Computing</h1>
+
+        <!-- Short intro -->
+        <p>
+            Quantum computing is an advanced computing technology that uses the laws of 
+            quantum mechanics to solve extremely complex problems faster than classical 
+            computers. Instead of regular bits, it uses <b>qubits</b>, which can exist in 
+            multiple states at the same time.
+        </p>
+
+        <!-- Where it is used -->
+        <div class="topic-box">
+            <div class="topic-title">📌 Where is Quantum Computing Used?</div>
+            • Cybersecurity & cryptography  
+            <br>• Artificial Intelligence & machine learning  
+            <br>• Medical research & drug discovery  
+            <br>• Climate modeling & weather predictions  
+            <br>• Financial risk analysis  
+        </div>
+
+        <!-- Real-world application -->
+        <div class="topic-box">
+            <div class="topic-title">🌍 Real-World Example</div>
+            Quantum computers can simulate how molecules behave.  
+            <br>This helps scientists discover new medicines much faster—something classical 
+            computers cannot do efficiently.
+        </div>
+
+        <!-- Existing subtopics -->
+        <div class="topic-box">
+            <div class="topic-title">⚛ Qubits and Superposition</div>
+            Qubits can represent multiple states at once, allowing quantum computers to 
+            process many possibilities simultaneously.
+        </div>
+
+        <div class="topic-box">
+            <div class="topic-title">🔗 Quantum Entanglement</div>
+            Two qubits become linked so strongly that the state of one instantly affects 
+            the other, even over large distances.
+        </div>
+
+        <div class="topic-box">
+            <div class="topic-title">⚡ Quantum Speedup</div>
+            Quantum algorithms offer massive speed advantages in optimization, cryptography, 
+            and simulation tasks.
+        </div>
+
+        <div class="topic-box">
+            <div class="topic-title">🔒 Quantum Cryptography</div>
+            It enables ultra-secure communications where tampering can be immediately detected.
+        </div>
+
+        <div class="topic-box">
+            <div class="topic-title">🧪 Quantum Applications</div>
+            Useful for medicine, finance, weather predictions, cybersecurity, and 
+            space research.
+        </div>
+
+        <!-- Button -->
+        <a href="news.html" class="modern-btn">Go to Quantum News →</a>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Tech – News</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: #0b0f2f;
+            color: #fff;
+        }
+
+        /* Navbar */
+        nav {
+            background: #0d1247;
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 0 10px rgba(0, 195, 255, 0.3);
+        }
+
+        nav .logo {
+            font-size: 22px;
+            font-weight: 700;
+            color: #02e8ff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #02e8ff;
+        }
+
+        /* News container */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+        }
+
+        .title {
+            font-size: 34px;
+            color: #02e8ff;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .news-card {
+            background: #131b52;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #02e8ff;
+            transition: 0.3s ease;
+        }
+
+        .news-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 20px rgba(0, 238, 255, 0.2);
+        }
+
+        .news-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: #02e8ff;
+            margin-bottom: 10px;
+        }
+
+        .news-card p {
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        .readmore {
+            display: inline-block;
+            margin-top: 10px;
+            color: #02e8ff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .readmore:hover {
+            color: #1a75ff;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Quantum Tech</div>
+        <ul>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="news.html">News</a></li>
+        </ul>
+    </nav>
+
+    <!-- News Content -->
+    <div class="container">
+        <h1 class="title">Latest Quantum Computing News</h1>
+
+        <div class="news-grid">
+
+            <!-- NEWS 1 -->
+            <div class="news-card">
+                <div class="news-title">⚛️ IBM Quantum Computing Breakthrough</div>
+                <p>IBM introduces a next-gen quantum processor improving stability and reducing errors significantly.</p>
+                <a class="readmore" href="https://www.ibm.com/topics/quantum-computing" target="_blank">
+                    Read Full Article →
+                </a>
+            </div>
+
+            <!-- NEWS 2 -->
+            <div class="news-card">
+                <div class="news-title">🔐 Quantum Encryption Gets Real</div>
+                <p>Tech giants adopt quantum-safe encryption to secure future digital communications.</p>
+                <a class="readmore" href="https://www.sciencedaily.com/news/computers_math/quantum_computing/" target="_blank">
+                    Read Full Article →
+                </a>
+            </div>
+
+            <!-- NEWS 3 -->
+            <div class="news-card">
+                <div class="news-title">🧬 Quantum Computing in Drug Discovery</div>
+                <p>Researchers use quantum simulations to speed up drug development and molecular research.</p>
+                <a class="readmore" href="https://www.nature.com/subjects/quantum-information" target="_blank">
+                    Read Full Article →
+                </a>
+            </div>
+
+            <!-- NEWS 4 -->
+            <div class="news-card">
+                <div class="news-title">💹 Quantum in Finance</div>
+                <p>Banks explore quantum algorithms for portfolio optimization and fraud detection.</p>
+                <a class="readmore" href="https://www.quantamagazine.org/" target="_blank">
+                    Read Full Article →
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
